@@ -36,6 +36,15 @@
                 <span class="limitedOffer">Limited Offer!</span>
             </div>
         </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="team covers.html">Home</a></li>
+                <li><a href="customize.html">Customize</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
         <div class="navBottom">
             <h3 class="menuItem">Skater John</h3>
             <h3 class="menuItem">Casetify</h3>
@@ -118,15 +127,15 @@
     </div>
 
     <div class="product" id="product">
-        <img src="D:\G\draft\img\SKATER 2.png" alt="" class="productImg">
+        <img src="D:\G\draft\img\SKATER 2.png" alt="" class="productImg" id="productImage">
         <div class="productDetails">
             <h1 class="productTitle">SKATER JOHNS</h1>
             <h2 class="productPrice">$199</h2>
             <p class="productDesc">GET YOURSELVES SOME NEW SEASONAL OFFERINGS OF OUR STANDARD SPECTURM</p>
             <div class="sizes">
-                <div class="size">IOS 11</div>
-                <div class="size">IOS 12</div>
-                <div class="size">IOS 13</div>
+                <div class="size" onclick="changeImage('https://cdn-image02.casetify.com/usr/9018/27699018/~v11/32358853_iphone-se__color_silver_16006411.png.500x500-r.m80.webp')">iPhone SE(2022)</div>
+                <div class="size"onclick="changeImage('https://cdn-image02.casetify.com/usr/9018/27699018/~v1/29901617_iphone12-pro-max__color_silver_16002215.png.500x500-r.m80.webp')">IOS 12</div>
+                <div class="size" onclick="changeImage('https://cdn-image02.casetify.com/usr/9018/27699018/~v35/25543903_iphone13-pro-max__color_white_16003331.png.500x500-r.m80.webp')">IOS 13</div>
             </div>
             <button class="productButton">BUY NOW!</button>
         </div>
@@ -140,8 +149,8 @@
             <input type="text" placeholder="Elton St 21 22-145" class="payInput">
             <h1 class="payTitle">Card Information</h1>
             <div class="cardIcons">
-                <img src="./img/visa.png" width="40" alt="" class="cardIcon">
-                <img src="./img/master.png" alt="" width="40" class="cardIcon">
+                <img src="https://www.visa.com.au/dam/VCOM/regional/ve/romania/blogs/hero-image/visa-logo-800x450.jpg" width="50" alt="" class="cardIcon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1200px-Mastercard-logo.svg.png" alt="" width="40" class="cardIcon">
             </div>
             <input type="password" class="payInput" placeholder="Card Number">
             <div class="cardInfo">
@@ -244,6 +253,11 @@
         </div>
     </footer>
     <script src="./app.js"></script>
+    <script>
+        function changeImage(imagePath) {
+            document.getElementById("productImage").src = imagePath;
+        }
+    </script>
 </body>
 
 </html>

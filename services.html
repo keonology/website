@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - The Covers</title>
+    <link rel="stylesheet" href="services.css">
+    <script src="services.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>The Covers</h1>
+        <nav>
+            <ul>
+                <li><a href="team_covers.html">Home</a></li>
+                <li><a href="customize.html">Customize</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="service-container">
+                <div class="service-item" tabindex="0" id="customizeCover">
+                    <h3>Custom Phone Covers</h3>
+                    <p>Design your own unique phone cover that reflects your personal style.</p>
+                    <img src="https://cdn-image02.casetify.com/usr/6588/26406588/~v297/25757783x2_iphone-16-pro__color_white-titanium_16007164.png.1000x1000-r.m80.webp" width="200" height="200" alt="Premium Materials">
+                    <button class="elegant-button" onclick="openModal()">Customize Now</button>
+                </div>
+                <div class="service-item" tabindex="0">
+                    <h3>Premium Materials</h3>
+                    <p>We use only the highest quality materials to ensure durability and protection.</p>
+                    <img src="https://www.lovecases.com/cdn/shop/files/LoveCasesPremiumUpload-03_021e1e95-3ec4-42d6-bd45-fc5c685517c9_grande.jpg?v=1686059520" width="200" alt="Premium Materials">
+                    <button class="elegant-button">Learn More</button>
+                </div>
+                <div class="service-item" tabindex="0">
+                    <h3>Fast Shipping</h3>
+                    <p>Your order will be shipped within 24 hours to ensure you receive it quickly.</p>
+                    <img src="https://png.pngtree.com/png-clipart/20230509/original/pngtree-fast-delivery-label-design-png-image_9153915.png" width="200" height="200" alt="Premium Materials">
+                    <button class="elegant-button">Learn More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="customizationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Customize Your Phone Cover</h2>
+            <form id="customizationForm">
+                <label for="coverDesign">Choose Your Phone Cover Design:</label>
+                <select id="coverDesign" name="coverDesign" onchange="updatePhoneModelOptions()" class="custom-select">
+                    <option value="">Select a Design</option>
+                    <option value="design1">Design 1</option>
+                    <option value="design2">Design 2</option>
+                    <option value="design3">Design 3</option>
+                </select>
+                
+                <label for="phoneModel">Choose Your Phone Model:</label>
+                <select id="phoneModel" name="phoneModel" onchange="updateImage()" class="custom-select">
+                    <option value="">Select a Phone Model</option>
+                    <option value="iphone-11">iPhone 11</option>
+                    <option value="iphone-12">iPhone 12</option>
+                    <option value="iphone-13">iPhone 13</option>
+                    <option value="iphone-14">iPhone 14</option>
+                    <option value="iphone-15">iPhone 15</option>
+                    <option value="samsung-galaxy-s21">Samsung Galaxy S21</option>
+                    <option value="samsung-galaxy-s22">Samsung Galaxy S22</option>
+                    <option value="samsung-galaxy-s23">Samsung Galaxy S23</option>
+                </select>
+
+                <div class="phone-image-container">
+                    <img id="phoneImage" src="" alt="Phone Model" style="display:none;">
+                </div>
+                <button type="submit" class="elegant-button">Checkout</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="app-download">
+        <h3>Download Our App</h3>
+            <a href="https://www.apple.com/app-store/" target="_blank">
+                <img src="https://iconape.com/wp-content/files/me/367745/svg/367745.svg" alt="App Store" class="app-icon">
+            </a>
+            <a href="https://play.google.com/store" target="_blank">
+                <img src="https://iconape.com/wp-content/files/bm/385899/svg/385899.svg" alt="Google Play" class="app-icon">
+            </a>
+        </div>
+    </div>
+    
+
+    <footer>
+        <p>&copy; 2024 The Covers. All rights reserved.</p>
+    </footer>
+</body>
+</html>
